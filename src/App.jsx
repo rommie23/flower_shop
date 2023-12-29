@@ -6,6 +6,7 @@ import { Home } from './pages/Home'
 import { Contact } from './pages/Contact'
 import { Vision } from './pages/Vision'
 import Products from './pages/Products'
+import Footer from './components/Footer'
 
 function App() {
   const [data, setData] = useState([])
@@ -31,6 +32,7 @@ function App() {
           <Route path='/contact' element={<Contact data={data}/>}/>
           <Route path='/vision' element={<Vision/>}/>
         </Routes>
+        <Footer/>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 const Products = ({data}) => {
   const myStyle={
     borderRadius: '120px 120px 80px 80px'
@@ -16,9 +17,11 @@ const Products = ({data}) => {
                 <p>{flr['common_name']}</p>
                 <p>&#x20B9; 2340</p>
               </div>
-              <button className='h-1/6'>
-                <div className='h-full text-xl text-secondary font-second flex items-center justify-center'>Add to cart</div>
-              </button>
+              <Link to='/vision'>
+                <button className='h-1/6'>
+                  <div className='h-full text-xl text-secondary font-second flex items-center justify-center'>Add to cart</div>
+                </button>
+              </Link>
             </div>
           </div>
         ))

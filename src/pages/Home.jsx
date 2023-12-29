@@ -10,7 +10,10 @@ export const Home = () => {
     <>
     <div className='h-4/5 w-full bg-primary overflow-hidden flex'>
         <div className='text-7xl w-1/2 text-left pt-20 pl-10 text-secondary font-prime'>Your <span className='text-2xl font-flower'>bloom & boom</span> destination for exquisite floral delights
-        <button className='px-10 py-4 bg-secondary text-primary text-4xl rounded-full mt-10'>Order Now</button>
+        <Link to='/products'>
+          <button className='px-10 py-4 bg-secondary text-primary text-4xl rounded-full mt-10'>Order Now</button>
+
+        </Link>
         </div>
         <div className='w-3/5 h-full scale-150 rounded-full relative top-1/2 left-36 overflow-hidden object-contain'>
             <img src="https://th.bing.com/th/id/OIP.BpiDnC2UhrdI0QyuBOz6TAHaEw?rs=1&pid=ImgDetMain" alt="flr"/>
